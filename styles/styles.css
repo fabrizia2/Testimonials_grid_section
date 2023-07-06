@@ -106,11 +106,11 @@ section .profile img {
   color: #48556a;
 }
 
-.dark-txt .profile .title {
+.dark-txt .profile .heading {
   color: #48556a80;
 }
 
-.dark-txt .qoute {
+.dark-txt .what-to-say {
   color: hsla(217, 19%, 35%, 70%);
 }
 
