@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+
+section {
+  padding: 2rem;
+  box-shadow: #000000 5px 10px 10px -15px;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+section .profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.heading {
+  color: #ffffff80;
+}
+
+.opinion {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.what-to-say {
+  color: #ffffffb3;
+  line-height: 1.5;
+}
+
+.daniel {
+  background-color: #7541c8;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+.daniel .profile img {
+  outline: 2px solid #9782cc;
+}
+
+.daniel .opinion {
+  position: relative;
+  z-index: 2;
+}
+
+.jonathan {
+  background-color: #48556a;
+}
+
+.kira {
+  grid-row: span 2;
+}
+
+.dark-txt {
+  background-color: #ffffff;
+}
+
+.dark-txt .opinion,
+.dark-txt .profile .name {
+  color: #48556a;
+}
+
+.dark-txt .profile .title {
+  color: #48556a80;
+}
+
+.dark-txt .qoute {
+  color: hsla(217, 19%, 35%, 70%);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .jeanette {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .jeanette {
+    grid-column: unset;
+  }
+}
+
+.patrick {
+  background-color: #19212e;
+  grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+  .patrick {
+    grid-column: unset;
+  }
+}
+
+.patrick .profile img {
+  outline: 2px solid #7541c8;
+}
+
+@media (min-width: 768px) {
+  .daniel {
+    grid-column: span 2;
+  }
+}
