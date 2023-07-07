@@ -114,6 +114,13 @@ section .profile img {
   color: hsla(217, 19%, 35%, 70%);
 }
 
+.attribution {  
+      position:absolute; 
+      bottom:0;
+      width: 100%;
+      text-align: center;
+    }
+
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
